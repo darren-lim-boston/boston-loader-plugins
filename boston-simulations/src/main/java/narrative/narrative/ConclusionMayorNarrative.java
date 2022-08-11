@@ -22,9 +22,9 @@ import narrative.narration.NarrationFireworks;
 import narrative.narration.NarrationMessage;
 import narrative.narration.NarrationSound;
 
-public class ConclusionMayorNarrative extends Narrative {
+import static narrative.narrative.NarrativeUtils.*;
 
-    public static final String NAME_MAYOR = "Mayor of Boston";
+public class ConclusionMayorNarrative extends Narrative {
 
     public ConclusionMayorNarrative(GameMaster master) {
         super(master, 13000);
@@ -73,7 +73,7 @@ public class ConclusionMayorNarrative extends Narrative {
     @Override
     public List<NarrativeEntity> getInitialNarrativeEntities() {
         List<NarrativeEntity> entities = new ArrayList<>();
-        entities.add(new NarrativePlayerEntity(master.getLocation(6811, -48, -7723).setDirection(new Vector(0, -0.5, 1)), "https://www.minecraftskins.com/uploads/skins/2022/07/07/mooshroom-in-suit--rq--20541495.png?v520", NAME_MAYOR));
+        entities.add(new NarrativePlayerEntity(master.getLocation(6811, -48, -7723).setDirection(new Vector(0, -0.5, 1)), MAYOR_SKIN_URL, NAME_MAYOR));
         
         for(int i = 0; i < 14; i += 2) {
             for(int j = -8; j < 20; j += 2) {
