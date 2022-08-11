@@ -1,0 +1,7 @@
+main: MainClass
+name: BostonLoader
+version: 1.0.0
+api-version: 1.13
+commands:
+  boston:
+    description: Command template.

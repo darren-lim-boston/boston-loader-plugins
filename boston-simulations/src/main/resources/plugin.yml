@@ -1,0 +1,10 @@
+main: MainClass
+name: BostonSimulations
+version: 1.0.0
+api-version: 1.13
+commands:
+  simulation:
+    description: Simulation helper command.
+  game:
+    description: Used to start the game.
+depend: [Citizens]
